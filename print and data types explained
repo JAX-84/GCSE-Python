@@ -1,0 +1,15 @@
+print("jAcK")#this is a string
+print("filer")#this is a string
+print(4)#this is an integer
+print(4.67)#this is a real/float
+print("*")#this is a character
+print(True)#this is a boolean
+
+#data types
+#CRIBS
+#C is for character e.g. "a"
+#R is for real/float e.g. 4.54
+#I is for integer e.g. 84
+#B is for boolean e.g. True or False
+#S is for string e.g. "hello"
+
