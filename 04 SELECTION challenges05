@@ -1,0 +1,9 @@
+raining = str(input("is it raining? >>>").lower())
+if raining == "yes":
+    wind = str(input("is it windy? >>>").lower())
+    if wind == "yes":
+        print("is it too windy for an umbrella?")
+    else:
+        print("take an umbrella")
+else:
+    print("enjoy your day")
