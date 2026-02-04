@@ -1,0 +1,8 @@
+invite = True
+count = 0
+while invite == True:
+    name = str(input("who do you want to invite?"))
+    print(name, "has been invited")
+    count = count + 1
+    invite = str(input("do you want to invite someone else?"))
+print(count)    
