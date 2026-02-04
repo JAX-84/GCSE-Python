@@ -1,0 +1,8 @@
+num = int(input("enter a number>>>"))
+total = num
+ans = "y"
+while ans == "y":
+    num2 = int(input("enter another number>>>"))
+    total = total + num2
+    print(total)
+    ans = str(input("do you want to enter add number?"))
