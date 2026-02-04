@@ -1,0 +1,19 @@
+compnum = 50
+num = int(input("enter a number>>>"))
+count = 1
+while num != compnum:
+    if num > compnum:
+        print("too high!")
+    else:
+        print("too low!")
+    num = int(input("enter another number>>>"))
+    count = count + 1
+    again = str(input("do you want to enter another number?"))
+    if again == "y":
+        num = int(input("enter another number>>>"))
+        count = count + 1
+    else:
+        print("you didn't guess the number!")
+        break
+if num == compnum:
+    print("well done, you took", count, "attempts")
