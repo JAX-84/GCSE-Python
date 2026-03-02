@@ -1,0 +1,14 @@
+#String Slicing Explained
+
+fruit = "mango"
+#above is a variable that contains a string
+print(fruit[0])
+print(fruit[1])
+print(fruit[2])
+print(fruit[3])
+print(fruit[4])
+#the print function prints from the variable, but has square brackets([])
+#square brackets([]) are an index
+
+person = "MAdAM"
+print(person[2:5])#this prints all of the letters in range from the 3rd one to the last one
