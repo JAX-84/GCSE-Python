@@ -1,0 +1,5 @@
+firstname = str(input("enter your fist name>>>"))
+lastname = str(input("enter your fist name>>>"))
+wholename = firstname + " " + lastname
+print(wholename)
+print(len(wholename))
