@@ -1,0 +1,34 @@
+#Random challenge10
+#run the code below
+#it is part of rock/paper/scissors
+#it works, but it needs more developing
+#Can you ask the user to enter rock or papers etc
+#Can the game display a random choice too
+#Can the game tell you if the user won
+#Can the game keep score of wins..
+#..for both the user and computer
+name = str(input("what is your name?"))
+import random
+weapons = ["rock", "paper", "scissors"]
+computer = random.choice(weapons)
+user = str(input("rock, paper, or scissors?").lower())
+print("user chose:", user)
+print("computer chose:", computer)
+if user == "rock" and computer == "rock":
+  print("DRAW!")
+elif user == "paper" and computer == "paper":
+  print("DRAW!")
+elif user == "scissors" and computer == "scissors":
+  print("DRAW!")
+elif user == "paper" and computer == "rock":
+  print(name, "WINS!")
+elif user == "scissors" and computer == "paper":
+  print(name, "WINS!")
+elif user == "rock" and computer == "scissors":
+  print(name, "WINS!")
+elif user == "rock" and computer == "paper":
+  print("Computer WINS!")
+elif user == "paper" and computer == "scissors":
+  print("Computer WINS!")
+elif user == "scissors" and computer == "rock":
+  print("Computer WINS!")
