@@ -1,0 +1,10 @@
+#Random challenge9
+#Create a magic 8-ball!
+#Ask the user to type in a yes/no question
+#e.g. "Will I own a helicopter?"
+#Your code will randomly display one of 6 answers
+#e.g.yes/no/no chance/one day etc
+import random
+question = str(input("type a yes or no queston").lower())
+answers = ["yes", "no", "no chance", "one day", "ABSOLUTELY", "maybe"]
+print("the magic 8-ball says...", random.choice(answers))
