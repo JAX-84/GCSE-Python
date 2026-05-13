@@ -1,0 +1,2 @@
+EmptyArray = [["a" for column in range(int(input("enter a number")))] for row in range(int(input("enter a number")))]
+print(EmptyArray)
