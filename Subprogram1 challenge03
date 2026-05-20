@@ -1,0 +1,16 @@
+def menu():
+    count = 0
+    options = ["1) 1-player", "2) 2-player", "3) Online", "4) Exit"]
+    for i in range(4):
+        print(options[count])
+        count = count + 1
+    choice = int(input("enter 1, 2, 3, or 4:"))
+    if choice == 1:
+        print(options[0], "selected")
+    elif choice == 2:
+        print(options[1], "selected")
+    elif choice == 3:
+        print(options[2], "selected")
+    else:
+        print("extiting...")
+menu()
