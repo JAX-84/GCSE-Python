@@ -1,0 +1,21 @@
+def menu():
+    count = 0
+    options = ["1) Creative", "2) Survival", "3) Hardcore", "4) Adventure", "5) Exit"]
+    for i in range(5):
+        print(options[count])
+        count = count + 1
+    choice = int(input("enter 1, 2, 3, 4, or 5: "))
+    while choice > 5:
+        print("invalid choice")
+        choice = int(input("enter 1, 2, 3, 4, or 5: "))
+        if choice == 1:
+            print(options[0], "selected")
+        elif choice == 2:
+            print(options[1], "selected")
+        elif choice == 3:
+            print(options[2], "selected")
+        elif choice == 4:
+            print(options[3], "selected")
+        elif choice == 5:
+            print("exiting...")
+menu()
