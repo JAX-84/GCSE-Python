@@ -1,0 +1,13 @@
+def menu():
+    options = ["1)Domination", "2)Team Deathmatch", "3)Headquarters"]
+    print(options[0])
+    print(options[1])
+    print(options[2])
+    choice = int(input("choose one of the options above by entering 1, 2, or 3"))
+    if choice == 1:
+        print(options[0])
+    elif choice == 2:
+        print(options[1])
+    else:
+        print(options[2])
+menu()
