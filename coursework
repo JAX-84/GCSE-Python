@@ -87,6 +87,15 @@ while Continue == True:
         print("-", bet)
         balance = balance - bet
         print("New balance: £", balance)
+        withdraw = str(input("Do you want to continue or withdraw?").lower())
+        if withdraw == "continue":
+            Continue = True
+            card_name = new_card_name
+        else:
+            print("Withdrawing...")
+            print("Final balance: £", balance)
+            print("Thank you for playing")
+            Continue = False
         card_name = new_card_name
         if balance <= 0:
             print("GAME OVER")
