@@ -18,7 +18,7 @@ card_name = {
 balance = 500#money
 print("Welcome to higher, lower, or the same!")
 time.sleep(1)
-print("The computer will generage a completely random card and will ask you to guess if the next card that will be drawn is the higher, lower, or the same")
+print("The computer will generate a completely random card and will ask you to guess if the next card that will be drawn is the higher, lower, or the same")
 time.sleep(1)
 print("To gain money in this game, you will have the chance to place bets")
 time.sleep(1)
