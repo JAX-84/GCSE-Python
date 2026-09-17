@@ -36,8 +36,7 @@ card = [card_name, "of", card_type]
 time.sleep(1)
 print("The first card is:", card)#displays card and type
 while Continue == True:
-    H_L_OR_S = input(f"Higher, Lower, or the same as the {card_name}: ").lower()#asks higher or lower than card generated
-    time.sleep(1)
+    H_L_OR_S = input(f"Higher, Lower, or the same as the {card_name}? h/l/s: ").lower()#asks higher or lower than card generated
     bet = int(input("How much do you bet?"))
     if bet > balance:
         print("Invalid bet. please enter again")
@@ -52,7 +51,7 @@ while Continue == True:
     time.sleep(1)
     print(card)
     time.sleep(1)#displays card and typeprint(card)#displays card and type
-    if H_L_OR_S == "higher" and card_name < new_card_name:
+    if H_L_OR_S == "h" and card_name < new_card_name:
         time.sleep(1)
         print("WIN!")
         balance = balance + bet
@@ -61,8 +60,8 @@ while Continue == True:
         time.sleep(1)
         print("New balance:", balance)
         time.sleep(1)
-        withdraw = str(input("Do you want to continue or withdraw?").lower())
-        if withdraw == "continue":
+        withdraw = str(input("Do you want to continue or withdraw? c/w").lower())
+        if withdraw == "c":
             Continue = True
             card_name = new_card_name
         else:
@@ -74,7 +73,7 @@ while Continue == True:
             print("Thank you for playing")
             time.sleep(1)
             Continue = False        
-    elif H_L_OR_S == "lower" and card_name > new_card_name:
+    elif H_L_OR_S == "l" and card_name > new_card_name:
         time.sleep(1)
         print("WIN!")
         balance = balance + bet
@@ -83,8 +82,8 @@ while Continue == True:
         time.sleep(1)
         print("New balance:", balance)
         time.sleep(1)
-        withdraw = str(input("Do you want to continue or withdraw?").lower())
-        if withdraw == "continue":
+        withdraw = str(input("Do you want to continue or withdraw? c/w").lower())
+        if withdraw == "c":
             Continue = True
             card_name = new_card_name
         else:
@@ -96,7 +95,7 @@ while Continue == True:
             print("Thank you for playing")
             time.sleep(1)
             Continue = False
-    elif H_L_OR_S == "same" and card_name == new_card_name:
+    elif H_L_OR_S == "s" and card_name == new_card_name:
         time.sleep(1)
         print("WIN!")
         balance = balance + bet
@@ -105,8 +104,8 @@ while Continue == True:
         time.sleep(1)
         print("New balance:", balance)
         time.sleep(1)
-        withdraw = str(input("Do you want to continue or withdraw?").lower())
-        if withdraw == "continue":
+        withdraw = str(input("Do you want to continue or withdraw? c/w").lower())
+        if withdraw == "c":
             Continue = True
             card_name = new_card_name
         else:
@@ -126,8 +125,8 @@ while Continue == True:
         time.sleep(1)
         print("New balance: £", balance)
         time.sleep(1)
-        withdraw = str(input("Do you want to continue or withdraw?").lower())
-        if withdraw == "continue":
+        withdraw = str(input("Do you want to continue or withdraw? c/w").lower())
+        if withdraw == "c":
             Continue = True
             card_name = new_card_name
         else:
