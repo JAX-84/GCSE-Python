@@ -1,0 +1,5 @@
+numbers = open("numbers.txt", "w")
+write = input("Write 5 numbers")
+numbers.write(write)
+numbers.close()
+print("Open numbers.txt")
